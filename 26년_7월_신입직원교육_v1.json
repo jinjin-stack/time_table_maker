@@ -1,0 +1,1869 @@
+{
+  "type": "newbie-training-timetable",
+  "version": 2,
+  "exportedAt": "2026-06-15T06:47:28.568Z",
+  "current": {
+    "name": {},
+    "startDate": "2026-07-16",
+    "events": [
+      {
+        "id": "mqerx6z996mltx",
+        "category": "조직이해",
+        "title": "오리엔테이션 및 교육안내",
+        "instructor": "윤혁진",
+        "day": 3,
+        "startSlot": 0,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqes8o7sg1b8rv",
+        "category": "조직이해",
+        "title": "원장님 환영사",
+        "instructor": "",
+        "day": 3,
+        "startSlot": 4,
+        "durationSlots": 2
+      },
+      {
+        "id": "mqes9p5dd8uoqq",
+        "category": "조직이해",
+        "title": "노동조합 소개",
+        "instructor": "",
+        "day": 3,
+        "startSlot": 7,
+        "durationSlots": 5
+      },
+      {
+        "id": "mqesabmkkoxqmn",
+        "category": "조직이해",
+        "title": "KAERI의 비전과 역사",
+        "instructor": "부원장님",
+        "day": 3,
+        "startSlot": 16,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesm1q68mdsba",
+        "category": "조직이해",
+        "title": "원자력진흥전략본부",
+        "instructor": "원자력진흥전략본부장",
+        "day": 3,
+        "startSlot": 20,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesotihezdc5v",
+        "category": "조직이해",
+        "title": "원자력안전기반연구소",
+        "instructor": "",
+        "day": 3,
+        "startSlot": 24,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesqf32j69k3l",
+        "category": "조직이해",
+        "title": "하나로양자과학연구소",
+        "instructor": "",
+        "day": 3,
+        "startSlot": 28,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesqjgz8fu2c7",
+        "category": "조직이해",
+        "title": "선진원자력연구소",
+        "instructor": "",
+        "day": 3,
+        "startSlot": 32,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesqx7yqbp3ok",
+        "category": "기타",
+        "title": "이동(대전 -> 감포)",
+        "instructor": "",
+        "day": 7,
+        "startSlot": 0,
+        "durationSlots": 12
+      },
+      {
+        "id": "mqessojdqub8z2",
+        "category": "조직이해",
+        "title": "KAERI 조직 소개",
+        "instructor": "경영기획본부장",
+        "day": 7,
+        "startSlot": 26,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqest1eaawng3s",
+        "category": "조직이해",
+        "title": "문무대왕과학연구소 소개 및 견학",
+        "instructor": "",
+        "day": 7,
+        "startSlot": 16,
+        "durationSlots": 4
+      },
+      {
+        "id": "mqestml7a33a9t",
+        "category": "조직이해",
+        "title": "간부 - 신입직원 상견례 및 티타임",
+        "instructor": "",
+        "day": 7,
+        "startSlot": 21,
+        "durationSlots": 4
+      },
+      {
+        "id": "mqesuc0o7c7uuv",
+        "category": "조직이해",
+        "title": "경주 양성자과학연구단 소개",
+        "instructor": "양성자과학연구단장",
+        "day": 7,
+        "startSlot": 30,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesugbnte1nqo",
+        "category": "조직이해",
+        "title": "교육 마무리",
+        "instructor": "",
+        "day": 7,
+        "startSlot": 35,
+        "durationSlots": 1
+      },
+      {
+        "id": "mqesv19m2jpnzo",
+        "category": "기타",
+        "title": "이동 (감포 -> 대전))",
+        "instructor": "",
+        "day": 9,
+        "startSlot": 16,
+        "durationSlots": 20
+      },
+      {
+        "id": "mqeswstdeub1si",
+        "category": "조직이해",
+        "title": "KAERI WAY",
+        "instructor": "",
+        "day": 10,
+        "startSlot": 0,
+        "durationSlots": 12
+      },
+      {
+        "id": "mqeswzw55jozk7",
+        "category": "조직이해",
+        "title": "KAERI WAY",
+        "instructor": "",
+        "day": 10,
+        "startSlot": 16,
+        "durationSlots": 20
+      },
+      {
+        "id": "mqesxoo2551pkk",
+        "category": "조직이해",
+        "title": "후행원자력연구소",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 1,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqesy6bn7139sy",
+        "category": "조직이해",
+        "title": "교육안내",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 0,
+        "durationSlots": 1
+      },
+      {
+        "id": "mqesz4xa8adw92",
+        "category": "조직이해",
+        "title": "차세대연구로사업단",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 5,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqeszg3e4z08js",
+        "category": "안전의식강화",
+        "title": "안전관리단",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 9,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet2mogqxovef",
+        "category": "안전의식강화",
+        "title": "방사성폐기물처리단",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 16,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet2xarcjjmdz",
+        "category": "조직이해",
+        "title": "원자력이해",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 1,
+        "durationSlots": 8
+      },
+      {
+        "id": "mqet5rva3vaowu",
+        "category": "조직이해",
+        "title": "인사업무 및 일가정양립제도",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 16,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet5yezqfzyyi",
+        "category": "조직이해",
+        "title": "급여 및 복리후생",
+        "instructor": "",
+        "day": 15,
+        "startSlot": 1,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet70e1e558dv",
+        "category": "안전의식강화",
+        "title": "방사능 방재 교육",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 20,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet720sftm0gl",
+        "category": "안전의식강화",
+        "title": "방사능 방재 교육",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 24,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet74uvveayr9",
+        "category": "안전의식강화",
+        "title": "방사능 방재 교육",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 28,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet76ht1w0u21",
+        "category": "안전의식강화",
+        "title": "방사능 방재 교육",
+        "instructor": "",
+        "day": 11,
+        "startSlot": 32,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqet8wuev08nkt",
+        "category": "기타",
+        "title": "수료식 준비",
+        "instructor": "",
+        "day": 17,
+        "startSlot": 16,
+        "durationSlots": 4
+      },
+      {
+        "id": "mqet95rhoqcif7",
+        "category": "기타",
+        "title": "수료식",
+        "instructor": "",
+        "day": 17,
+        "startSlot": 21,
+        "durationSlots": 6
+      },
+      {
+        "id": "mqet9a1lv80t8d",
+        "category": "기타",
+        "title": "부서배치",
+        "instructor": "",
+        "day": 17,
+        "startSlot": 28,
+        "durationSlots": 1
+      },
+      {
+        "id": "mqet9q1wty2vvo",
+        "category": "기초역량",
+        "title": "사회적 장애인식 개선",
+        "instructor": "",
+        "day": 17,
+        "startSlot": 0,
+        "durationSlots": 4
+      },
+      {
+        "id": "mqet9zqns05ci2",
+        "category": "기초역량",
+        "title": "비즈니스 매너",
+        "instructor": "",
+        "day": 17,
+        "startSlot": 4,
+        "durationSlots": 8
+      },
+      {
+        "id": "mqetb37ib512pz",
+        "category": "기초역량",
+        "title": "연구윤리",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 6,
+        "durationSlots": 6
+      },
+      {
+        "id": "mqetdiazrxbdr0",
+        "category": "기초역량",
+        "title": "연구기획",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 16,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetdsbch8d105",
+        "category": "기초역량",
+        "title": "연구관리",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 20,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetdwi7hcy9ji",
+        "category": "기초역량",
+        "title": "구매",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 32,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqete38pkx1mta",
+        "category": "기초역량",
+        "title": "IT 인프라",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 31,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqeteybw3c63n9",
+        "category": "안전의식강화",
+        "title": "방사선 안전관리",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 20,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetf413boubzt",
+        "category": "안전의식강화",
+        "title": "보안 및 실험실 안전",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 24,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetfq2o2zgxth",
+        "category": "안전의식강화",
+        "title": "사이버 보안 및 정보보호",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 28,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetgdrzm5r0pm",
+        "category": "기초역량",
+        "title": "소통도 기술이다",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 24,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetgrbpf0cw8a",
+        "category": "기타",
+        "title": "학업 성취도 평가",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 28,
+        "durationSlots": 2
+      },
+      {
+        "id": "mqethgymv9vgqf",
+        "category": "기타",
+        "title": "이동 (대전 -> 정읍)",
+        "instructor": "",
+        "day": 15,
+        "startSlot": 4,
+        "durationSlots": 8
+      },
+      {
+        "id": "mqethv63x97kot",
+        "category": "조직이해",
+        "title": "첨단 방사선연구소",
+        "instructor": "",
+        "day": 15,
+        "startSlot": 16,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqeti4amxhctvm",
+        "category": "조직이해",
+        "title": "첨단방사선연구소 견학",
+        "instructor": "",
+        "day": 15,
+        "startSlot": 20,
+        "durationSlots": 8
+      },
+      {
+        "id": "mqetimd2uylmtr",
+        "category": "기타",
+        "title": "이동 (정읍 - 대전)",
+        "instructor": "",
+        "day": 15,
+        "startSlot": 29,
+        "durationSlots": 7
+      },
+      {
+        "id": "mqetpmehl0n4vn",
+        "category": "조직이해",
+        "title": "지식재산권",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 2,
+        "durationSlots": 3
+      },
+      {
+        "id": "mqetq7kd8hvm1s",
+        "category": "조직이해",
+        "title": "경력평점 안내",
+        "instructor": "",
+        "day": 14,
+        "startSlot": 10,
+        "durationSlots": 2
+      },
+      {
+        "id": "mqeuewkenb5uu4",
+        "category": "기타",
+        "title": "예비군 안내",
+        "instructor": "",
+        "day": 16,
+        "startSlot": 1,
+        "durationSlots": 1
+      }
+    ],
+    "holidays": [
+      "2026-07-17"
+    ]
+  },
+  "favorites": [
+    {
+      "category": "조직이해",
+      "title": "오리엔테이션 및 교육안내",
+      "instructor": "윤혁진",
+      "durationSlots": 2
+    }
+  ],
+  "saved": {
+    "2026년 7월 신입직원교육_V1": {
+      "startDate": "2026-07-16",
+      "events": [
+        {
+          "id": "mqerx6z996mltx",
+          "category": "조직이해",
+          "title": "오리엔테이션 및 교육안내",
+          "instructor": "윤혁진",
+          "day": 3,
+          "startSlot": 0,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqes8o7sg1b8rv",
+          "category": "조직이해",
+          "title": "원장님 환영사",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 4,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqes9p5dd8uoqq",
+          "category": "조직이해",
+          "title": "노동조합 소개",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 7,
+          "durationSlots": 5
+        },
+        {
+          "id": "mqesabmkkoxqmn",
+          "category": "조직이해",
+          "title": "KAERI의 비전과 역사",
+          "instructor": "부원장님",
+          "day": 3,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesm1q68mdsba",
+          "category": "조직이해",
+          "title": "원자력진흥전략본부",
+          "instructor": "원자력진흥전략본부장",
+          "day": 3,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesotihezdc5v",
+          "category": "조직이해",
+          "title": "원자력안전기반연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqf32j69k3l",
+          "category": "조직이해",
+          "title": "하나로양자과학연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqjgz8fu2c7",
+          "category": "조직이해",
+          "title": "선진원자력연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqx7yqbp3ok",
+          "category": "기타",
+          "title": "이동(대전 -> 감포)",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqessojdqub8z2",
+          "category": "조직이해",
+          "title": "KAERI 조직 소개",
+          "instructor": "경영기획본부장",
+          "day": 7,
+          "startSlot": 26,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqest1eaawng3s",
+          "category": "조직이해",
+          "title": "문무대왕과학연구소 소개 및 견학",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqestml7a33a9t",
+          "category": "조직이해",
+          "title": "간부 - 신입직원 상견례 및 티타임",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 21,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqesuc0o7c7uuv",
+          "category": "조직이해",
+          "title": "경주 양성자과학연구단 소개",
+          "instructor": "양성자과학연구단장",
+          "day": 7,
+          "startSlot": 30,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesugbnte1nqo",
+          "category": "조직이해",
+          "title": "교육 마무리",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 35,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesv19m2jpnzo",
+          "category": "기타",
+          "title": "이동 (감포 -> 대전))",
+          "instructor": "",
+          "day": 9,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqeswstdeub1si",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqeswzw55jozk7",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqesxoo2551pkk",
+          "category": "조직이해",
+          "title": "후행원자력연구소",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesy6bn7139sy",
+          "category": "조직이해",
+          "title": "교육안내",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 0,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesz4xa8adw92",
+          "category": "조직이해",
+          "title": "차세대연구로사업단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 5,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeszg3e4z08js",
+          "category": "안전의식강화",
+          "title": "안전관리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 9,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2mogqxovef",
+          "category": "안전의식강화",
+          "title": "방사성폐기물처리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2xarcjjmdz",
+          "category": "조직이해",
+          "title": "원자력이해",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 1,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqet5rva3vaowu",
+          "category": "조직이해",
+          "title": "인사업무 및 일가정양립제도",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet5yezqfzyyi",
+          "category": "조직이해",
+          "title": "급여 및 복리후생",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet70e1e558dv",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet720sftm0gl",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet74uvveayr9",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet76ht1w0u21",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet8wuev08nkt",
+          "category": "기타",
+          "title": "수료식 준비",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet95rhoqcif7",
+          "category": "기타",
+          "title": "수료식",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 21,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqet9a1lv80t8d",
+          "category": "기타",
+          "title": "부서배치",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 28,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqet9q1wty2vvo",
+          "category": "기초역량",
+          "title": "사회적 장애인식 개선",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 0,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet9zqns05ci2",
+          "category": "기초역량",
+          "title": "비즈니스 매너",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetb37ib512pz",
+          "category": "기초역량",
+          "title": "연구윤리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 6,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqetdiazrxbdr0",
+          "category": "기초역량",
+          "title": "연구기획",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdsbch8d105",
+          "category": "기초역량",
+          "title": "연구관리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdwi7hcy9ji",
+          "category": "기초역량",
+          "title": "구매",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqete38pkx1mta",
+          "category": "기초역량",
+          "title": "IT 인프라",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 31,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeteybw3c63n9",
+          "category": "안전의식강화",
+          "title": "방사선 안전관리",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetf413boubzt",
+          "category": "안전의식강화",
+          "title": "보안 및 실험실 안전",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetfq2o2zgxth",
+          "category": "안전의식강화",
+          "title": "사이버 보안 및 정보보호",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgdrzm5r0pm",
+          "category": "기초역량",
+          "title": "소통도 기술이다",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgrbpf0cw8a",
+          "category": "기타",
+          "title": "학업 성취도 평가",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 28,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqethgymv9vgqf",
+          "category": "기타",
+          "title": "이동 (대전 -> 정읍)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqethv63x97kot",
+          "category": "조직이해",
+          "title": "첨단 방사선연구소",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeti4amxhctvm",
+          "category": "조직이해",
+          "title": "첨단방사선연구소 견학",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 20,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetimd2uylmtr",
+          "category": "기타",
+          "title": "이동 (정읍 - 대전)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 29,
+          "durationSlots": 7
+        },
+        {
+          "id": "mqetpmehl0n4vn",
+          "category": "조직이해",
+          "title": "지식재산권",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 2,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetq7kd8hvm1s",
+          "category": "조직이해",
+          "title": "경력평점 안내",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 10,
+          "durationSlots": 2
+        }
+      ],
+      "holidays": [
+        "2026-07-17"
+      ],
+      "savedAt": "2026-06-15T06:21:56.752Z"
+    },
+    "[object Blob]": {
+      "startDate": "2026-07-16",
+      "events": [
+        {
+          "id": "mqerx6z996mltx",
+          "category": "조직이해",
+          "title": "오리엔테이션 및 교육안내",
+          "instructor": "윤혁진",
+          "day": 3,
+          "startSlot": 0,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqes8o7sg1b8rv",
+          "category": "조직이해",
+          "title": "원장님 환영사",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 4,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqes9p5dd8uoqq",
+          "category": "조직이해",
+          "title": "노동조합 소개",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 7,
+          "durationSlots": 5
+        },
+        {
+          "id": "mqesabmkkoxqmn",
+          "category": "조직이해",
+          "title": "KAERI의 비전과 역사",
+          "instructor": "부원장님",
+          "day": 3,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesm1q68mdsba",
+          "category": "조직이해",
+          "title": "원자력진흥전략본부",
+          "instructor": "원자력진흥전략본부장",
+          "day": 3,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesotihezdc5v",
+          "category": "조직이해",
+          "title": "원자력안전기반연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqf32j69k3l",
+          "category": "조직이해",
+          "title": "하나로양자과학연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqjgz8fu2c7",
+          "category": "조직이해",
+          "title": "선진원자력연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqx7yqbp3ok",
+          "category": "기타",
+          "title": "이동(대전 -> 감포)",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqessojdqub8z2",
+          "category": "조직이해",
+          "title": "KAERI 조직 소개",
+          "instructor": "경영기획본부장",
+          "day": 7,
+          "startSlot": 26,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqest1eaawng3s",
+          "category": "조직이해",
+          "title": "문무대왕과학연구소 소개 및 견학",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqestml7a33a9t",
+          "category": "조직이해",
+          "title": "간부 - 신입직원 상견례 및 티타임",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 21,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqesuc0o7c7uuv",
+          "category": "조직이해",
+          "title": "경주 양성자과학연구단 소개",
+          "instructor": "양성자과학연구단장",
+          "day": 7,
+          "startSlot": 30,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesugbnte1nqo",
+          "category": "조직이해",
+          "title": "교육 마무리",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 35,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesv19m2jpnzo",
+          "category": "기타",
+          "title": "이동 (감포 -> 대전))",
+          "instructor": "",
+          "day": 9,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqeswstdeub1si",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqeswzw55jozk7",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqesxoo2551pkk",
+          "category": "조직이해",
+          "title": "후행원자력연구소",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesy6bn7139sy",
+          "category": "조직이해",
+          "title": "교육안내",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 0,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesz4xa8adw92",
+          "category": "조직이해",
+          "title": "차세대연구로사업단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 5,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeszg3e4z08js",
+          "category": "안전의식강화",
+          "title": "안전관리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 9,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2mogqxovef",
+          "category": "안전의식강화",
+          "title": "방사성폐기물처리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2xarcjjmdz",
+          "category": "조직이해",
+          "title": "원자력이해",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 1,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqet5rva3vaowu",
+          "category": "조직이해",
+          "title": "인사업무 및 일가정양립제도",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet5yezqfzyyi",
+          "category": "조직이해",
+          "title": "급여 및 복리후생",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet70e1e558dv",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet720sftm0gl",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet74uvveayr9",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet76ht1w0u21",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet8wuev08nkt",
+          "category": "기타",
+          "title": "수료식 준비",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet95rhoqcif7",
+          "category": "기타",
+          "title": "수료식",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 21,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqet9a1lv80t8d",
+          "category": "기타",
+          "title": "부서배치",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 28,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqet9q1wty2vvo",
+          "category": "기초역량",
+          "title": "사회적 장애인식 개선",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 0,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet9zqns05ci2",
+          "category": "기초역량",
+          "title": "비즈니스 매너",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetb37ib512pz",
+          "category": "기초역량",
+          "title": "연구윤리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 6,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqetdiazrxbdr0",
+          "category": "기초역량",
+          "title": "연구기획",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdsbch8d105",
+          "category": "기초역량",
+          "title": "연구관리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdwi7hcy9ji",
+          "category": "기초역량",
+          "title": "구매",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqete38pkx1mta",
+          "category": "기초역량",
+          "title": "IT 인프라",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 31,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeteybw3c63n9",
+          "category": "안전의식강화",
+          "title": "방사선 안전관리",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetf413boubzt",
+          "category": "안전의식강화",
+          "title": "보안 및 실험실 안전",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetfq2o2zgxth",
+          "category": "안전의식강화",
+          "title": "사이버 보안 및 정보보호",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgdrzm5r0pm",
+          "category": "기초역량",
+          "title": "소통도 기술이다",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgrbpf0cw8a",
+          "category": "기타",
+          "title": "학업 성취도 평가",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 28,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqethgymv9vgqf",
+          "category": "기타",
+          "title": "이동 (대전 -> 정읍)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqethv63x97kot",
+          "category": "조직이해",
+          "title": "첨단 방사선연구소",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeti4amxhctvm",
+          "category": "조직이해",
+          "title": "첨단방사선연구소 견학",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 20,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetimd2uylmtr",
+          "category": "기타",
+          "title": "이동 (정읍 - 대전)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 29,
+          "durationSlots": 7
+        },
+        {
+          "id": "mqetpmehl0n4vn",
+          "category": "조직이해",
+          "title": "지식재산권",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 2,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetq7kd8hvm1s",
+          "category": "조직이해",
+          "title": "경력평점 안내",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 10,
+          "durationSlots": 2
+        }
+      ],
+      "holidays": [
+        "2026-07-17"
+      ],
+      "savedAt": "2026-06-15T06:29:04.343Z"
+    },
+    "[object Object]": {
+      "startDate": "2026-07-16",
+      "events": [
+        {
+          "id": "mqerx6z996mltx",
+          "category": "조직이해",
+          "title": "오리엔테이션 및 교육안내",
+          "instructor": "윤혁진",
+          "day": 3,
+          "startSlot": 0,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqes8o7sg1b8rv",
+          "category": "조직이해",
+          "title": "원장님 환영사",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 4,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqes9p5dd8uoqq",
+          "category": "조직이해",
+          "title": "노동조합 소개",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 7,
+          "durationSlots": 5
+        },
+        {
+          "id": "mqesabmkkoxqmn",
+          "category": "조직이해",
+          "title": "KAERI의 비전과 역사",
+          "instructor": "부원장님",
+          "day": 3,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesm1q68mdsba",
+          "category": "조직이해",
+          "title": "원자력진흥전략본부",
+          "instructor": "원자력진흥전략본부장",
+          "day": 3,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesotihezdc5v",
+          "category": "조직이해",
+          "title": "원자력안전기반연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqf32j69k3l",
+          "category": "조직이해",
+          "title": "하나로양자과학연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqjgz8fu2c7",
+          "category": "조직이해",
+          "title": "선진원자력연구소",
+          "instructor": "",
+          "day": 3,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesqx7yqbp3ok",
+          "category": "기타",
+          "title": "이동(대전 -> 감포)",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqessojdqub8z2",
+          "category": "조직이해",
+          "title": "KAERI 조직 소개",
+          "instructor": "경영기획본부장",
+          "day": 7,
+          "startSlot": 26,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqest1eaawng3s",
+          "category": "조직이해",
+          "title": "문무대왕과학연구소 소개 및 견학",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqestml7a33a9t",
+          "category": "조직이해",
+          "title": "간부 - 신입직원 상견례 및 티타임",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 21,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqesuc0o7c7uuv",
+          "category": "조직이해",
+          "title": "경주 양성자과학연구단 소개",
+          "instructor": "양성자과학연구단장",
+          "day": 7,
+          "startSlot": 30,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesugbnte1nqo",
+          "category": "조직이해",
+          "title": "교육 마무리",
+          "instructor": "",
+          "day": 7,
+          "startSlot": 35,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesv19m2jpnzo",
+          "category": "기타",
+          "title": "이동 (감포 -> 대전))",
+          "instructor": "",
+          "day": 9,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqeswstdeub1si",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 0,
+          "durationSlots": 12
+        },
+        {
+          "id": "mqeswzw55jozk7",
+          "category": "조직이해",
+          "title": "KAERI WAY",
+          "instructor": "",
+          "day": 10,
+          "startSlot": 16,
+          "durationSlots": 20
+        },
+        {
+          "id": "mqesxoo2551pkk",
+          "category": "조직이해",
+          "title": "후행원자력연구소",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqesy6bn7139sy",
+          "category": "조직이해",
+          "title": "교육안내",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 0,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqesz4xa8adw92",
+          "category": "조직이해",
+          "title": "차세대연구로사업단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 5,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeszg3e4z08js",
+          "category": "안전의식강화",
+          "title": "안전관리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 9,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2mogqxovef",
+          "category": "안전의식강화",
+          "title": "방사성폐기물처리단",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet2xarcjjmdz",
+          "category": "조직이해",
+          "title": "원자력이해",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 1,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqet5rva3vaowu",
+          "category": "조직이해",
+          "title": "인사업무 및 일가정양립제도",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet5yezqfzyyi",
+          "category": "조직이해",
+          "title": "급여 및 복리후생",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 1,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet70e1e558dv",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet720sftm0gl",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet74uvveayr9",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet76ht1w0u21",
+          "category": "안전의식강화",
+          "title": "방사능 방재 교육",
+          "instructor": "",
+          "day": 11,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqet8wuev08nkt",
+          "category": "기타",
+          "title": "수료식 준비",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 16,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet95rhoqcif7",
+          "category": "기타",
+          "title": "수료식",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 21,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqet9a1lv80t8d",
+          "category": "기타",
+          "title": "부서배치",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 28,
+          "durationSlots": 1
+        },
+        {
+          "id": "mqet9q1wty2vvo",
+          "category": "기초역량",
+          "title": "사회적 장애인식 개선",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 0,
+          "durationSlots": 4
+        },
+        {
+          "id": "mqet9zqns05ci2",
+          "category": "기초역량",
+          "title": "비즈니스 매너",
+          "instructor": "",
+          "day": 17,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetb37ib512pz",
+          "category": "기초역량",
+          "title": "연구윤리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 6,
+          "durationSlots": 6
+        },
+        {
+          "id": "mqetdiazrxbdr0",
+          "category": "기초역량",
+          "title": "연구기획",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdsbch8d105",
+          "category": "기초역량",
+          "title": "연구관리",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetdwi7hcy9ji",
+          "category": "기초역량",
+          "title": "구매",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 32,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqete38pkx1mta",
+          "category": "기초역량",
+          "title": "IT 인프라",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 31,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeteybw3c63n9",
+          "category": "안전의식강화",
+          "title": "방사선 안전관리",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 20,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetf413boubzt",
+          "category": "안전의식강화",
+          "title": "보안 및 실험실 안전",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetfq2o2zgxth",
+          "category": "안전의식강화",
+          "title": "사이버 보안 및 정보보호",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 28,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgdrzm5r0pm",
+          "category": "기초역량",
+          "title": "소통도 기술이다",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 24,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetgrbpf0cw8a",
+          "category": "기타",
+          "title": "학업 성취도 평가",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 28,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqethgymv9vgqf",
+          "category": "기타",
+          "title": "이동 (대전 -> 정읍)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 4,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqethv63x97kot",
+          "category": "조직이해",
+          "title": "첨단 방사선연구소",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 16,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqeti4amxhctvm",
+          "category": "조직이해",
+          "title": "첨단방사선연구소 견학",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 20,
+          "durationSlots": 8
+        },
+        {
+          "id": "mqetimd2uylmtr",
+          "category": "기타",
+          "title": "이동 (정읍 - 대전)",
+          "instructor": "",
+          "day": 15,
+          "startSlot": 29,
+          "durationSlots": 7
+        },
+        {
+          "id": "mqetpmehl0n4vn",
+          "category": "조직이해",
+          "title": "지식재산권",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 2,
+          "durationSlots": 3
+        },
+        {
+          "id": "mqetq7kd8hvm1s",
+          "category": "조직이해",
+          "title": "경력평점 안내",
+          "instructor": "",
+          "day": 14,
+          "startSlot": 10,
+          "durationSlots": 2
+        },
+        {
+          "id": "mqeuewkenb5uu4",
+          "category": "기타",
+          "title": "예비군 안내",
+          "instructor": "",
+          "day": 16,
+          "startSlot": 1,
+          "durationSlots": 1
+        }
+      ],
+      "holidays": [
+        "2026-07-17"
+      ],
+      "savedAt": "2026-06-15T06:41:03.113Z"
+    }
+  }
+}
