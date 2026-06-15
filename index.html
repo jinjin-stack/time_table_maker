@@ -454,6 +454,7 @@
     <span><i style="background:var(--c-etc)"></i>기타</span>
     <span><i style="background:#fef3c7;border:1px solid #f59e0b;"></i>점심 12-13</span>
   </div>
+  <button class="btn-secondary" id="btnGhSettings" title="GitHub 자동저장 PAT 설정" style="padding:6px 10px;">⚙️</button>
 </header>
 
 <main>
@@ -466,19 +467,6 @@
         <button class="btn-secondary" id="btnSaveAs" style="flex:1;">새로 저장</button>
         <button class="btn-secondary" id="btnOverwrite" style="flex:1;" title="현재 이름으로 덮어쓰기">덮어쓰기</button>
       </div>
-      <div style="display:flex;gap:4px;margin-bottom:6px;flex-wrap:wrap;">
-        <button class="btn-secondary" id="btnExport" style="flex:1;" title="날짜포함 파일명으로 백업">📥 백업(JSON)</button>
-        <button class="btn-secondary" id="btnImport" style="flex:1;" title="JSON 파일에서 복원">📤 복원</button>
-        <input type="file" id="fileImport" accept=".json" style="display:none;">
-      </div>
-      <div style="background:#fef3c7;padding:7px;border-radius:4px;border:1px solid #f59e0b;margin-bottom:8px;">
-        <div style="font-size:11px;color:#92400e;font-weight:700;margin-bottom:5px;">🌐 GitHub 배포 동기화</div>
-        <div id="cloudStatus" style="font-size:10px;color:#78350f;margin-bottom:5px;line-height:1.4;">— 로컬 환경</div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;">
-          <button class="btn-secondary" id="btnExportGithub" style="flex:1;font-size:11px;" title="data.json 고정 파일명으로 다운로드 → GitHub 레포에 덮어쓰기">📥 data.json</button>
-          <button class="btn-secondary" id="btnCloudReload" style="flex:1;font-size:11px;" title="GitHub의 data.json에서 다시 불러오기">🔄 새로고침</button>
-        </div>
-      </div>
       <ul class="saved-list" id="savedList"></ul>
     </div>
 
@@ -489,12 +477,11 @@
 
     <div style="font-size:11px;color:var(--muted);line-height:1.55;border-top:1px solid var(--border);padding-top:10px;">
       • <b>빈 칸 더블클릭</b> → 그 시각부터 45분 교육 추가<br>
-      • 즐겨찾기를 시간표로 <b>드래그</b>해서 추가<br>
+      • 즐겨찾기 → 시간표로 <b>드래그</b>해서 추가<br>
       • 시간표 블록도 <b>드래그</b>로 이동<br>
       • 블록 우상단 ✎ 수정 / ✕ 삭제<br>
-      • 날짜 헤더 클릭 → <b>휴일 토글</b> (빨강 빗금 표시, 교육일 산정 제외)<br>
-      • <b>새로 저장</b>으로 이름 붙여 보관<br>
-      • 자동 저장은 현재 작업 상태만
+      • 날짜 헤더 클릭 → <b>휴일 토글</b><br>
+      • <b>새로 저장 / 덮어쓰기</b> → GitHub data.json 자동 업데이트 (PAT 설정 시)
     </div>
     <button class="btn-ghost" id="btnClearHolidays" style="margin-top:6px;">휴일 지정 모두 해제</button>
   </aside>
@@ -548,6 +535,58 @@
       <div class="right">
         <button class="btn-secondary" id="btnCancel">취소</button>
         <button class="btn-primary" id="btnSave">저장</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GitHub Settings Modal -->
+<div class="modal-backdrop" id="ghBackdrop">
+  <div class="modal" style="width:440px;">
+    <h2>⚙️ GitHub 자동 저장 설정</h2>
+    <div style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.6;background:#f9fafb;padding:8px 10px;border-radius:4px;border-left:3px solid #f59e0b;">
+      owner/repo는 <code>jinjin-stack/time_table_maker</code> 로 이미 박혀 있습니다.<br>
+      <b>PAT 1회만 입력하면</b> 이 브라우저에서 자동 저장이 동작합니다.<br><br>
+      <b>PAT 발급:</b><br>
+      1. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" style="color:#2563eb;">github.com/settings/personal-access-tokens/new</a><br>
+      2. <b>Repository access</b> → <code>time_table_maker</code> 1개만 선택<br>
+      3. <b>Permissions → Contents</b> = <b>Read and write</b><br>
+      4. 생성된 <code>github_pat_…</code> 복사 → 아래 입력<br>
+      <span style="color:#dc2626;">⚠️ PAT는 이 브라우저 localStorage에만 저장됩니다 (공용 PC에서 작업 후 비우세요)</span>
+    </div>
+    <div class="form-row">
+      <label>GitHub Username</label>
+      <input type="text" id="ghOwner" placeholder="예: yoonhj">
+    </div>
+    <div class="form-row">
+      <label>Repository Name</label>
+      <input type="text" id="ghRepo" placeholder="예: training-schedule">
+    </div>
+    <div class="form-row time-row">
+      <div>
+        <label>Branch</label>
+        <input type="text" id="ghBranch" placeholder="main" value="main">
+      </div>
+      <div>
+        <label>파일 경로</label>
+        <input type="text" id="ghPath" placeholder="data.json" value="data.json">
+      </div>
+    </div>
+    <div class="form-row">
+      <label>Personal Access Token</label>
+      <input type="password" id="ghPat" placeholder="github_pat_… 또는 ghp_…">
+    </div>
+    <div class="form-row fav-check">
+      <input type="checkbox" id="ghEnabled">
+      <label for="ghEnabled" style="margin:0;cursor:pointer;">"새로 저장" / "덮어쓰기" 시 GitHub에도 자동 푸시</label>
+    </div>
+    <div class="actions">
+      <div class="left">
+        <button class="btn-secondary" id="ghTest">🔌 연결 테스트</button>
+      </div>
+      <div class="right">
+        <button class="btn-secondary" id="ghCancel">취소</button>
+        <button class="btn-primary" id="ghSaveCfg">저장</button>
       </div>
     </div>
   </div>
@@ -1096,9 +1135,28 @@ function saveAs(name) {
     savedAt: new Date().toISOString()
   };
   state.current.name = name;
+  state.lastExplicitSave = Date.now();
   saveState();
   renderSavedList();
   showToast(`"${name}" 저장 완료`);
+  maybeAutoPushToGitHub(name);
+}
+
+function maybeAutoPushToGitHub(name) {
+  if (!ghConfig || !ghConfig.enabled) return;
+  if (!ghConfig.pat || !ghConfig.owner || !ghConfig.repo) return;
+  updateCloudStatus('GitHub 푸시 중…');
+  ghPushDataJson()
+    .then(() => {
+      const ts = new Date().toLocaleString('ko-KR');
+      updateCloudStatus(`✅ GitHub 자동 푸시됨 (${ts})`);
+      showToast(`"${name}" → GitHub data.json 자동 업데이트`);
+    })
+    .catch(e => {
+      updateCloudStatus(`❌ GitHub 푸시 실패: ${e.message}`);
+      showToast(`로컬 저장 OK, GitHub 푸시 실패`);
+      console.error('GitHub push failed:', e);
+    });
 }
 
 /* ========= Modal: Add/Edit ========= */
@@ -1250,73 +1308,7 @@ document.getElementById('btnOverwrite').addEventListener('click', () => {
   saveAs(state.current.name);
 });
 
-/* Export/Import JSON */
-document.getElementById('btnExport').addEventListener('click', () => {
-  const payload = {
-    type: 'newbie-training-timetable',
-    version: 2,
-    exportedAt: new Date().toISOString(),
-    current: state.current,
-    favorites: state.favorites,
-    saved: state.saved
-  };
-  const name = (state.current.name || '시간표') + '_' + toDateStr(new Date());
-  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = `${name}.json`;
-  a.click();
-  URL.revokeObjectURL(a.href);
-});
-document.getElementById('btnImport').addEventListener('click', () => {
-  document.getElementById('fileImport').click();
-});
-document.getElementById('fileImport').addEventListener('change', e => {
-  const file = e.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    try {
-      const data = JSON.parse(reader.result);
-      if (data.type !== 'newbie-training-timetable') {
-        if (!confirm('이 파일이 시간표 형식인지 확실하지 않습니다. 계속할까요?')) return;
-      }
-      const choice = prompt(
-        '가져오기 방식을 선택하세요:\n  1 = 전체 교체 (현재 + 저장목록 + 즐겨찾기 모두 덮어쓰기)\n  2 = 저장목록에만 병합 (현재 작업 유지)\n  3 = 즐겨찾기만 병합',
-        '2'
-      );
-      if (choice === '1') {
-        if (data.current) state.current = data.current;
-        if (Array.isArray(data.favorites)) state.favorites = data.favorites;
-        if (data.saved) state.saved = data.saved;
-      } else if (choice === '2') {
-        if (data.saved) Object.assign(state.saved, data.saved);
-        if (data.current && data.current.name) {
-          state.saved[data.current.name] = {
-            startDate: data.current.startDate,
-            events: data.current.events,
-            savedAt: data.exportedAt || new Date().toISOString()
-          };
-        }
-      } else if (choice === '3') {
-        if (Array.isArray(data.favorites)) state.favorites.push(...data.favorites);
-      } else {
-        return;
-      }
-      saveState();
-      document.getElementById('startDate').value = state.current.startDate;
-      renderTimetable();
-      renderFavorites();
-      renderSavedList();
-      showToast('가져오기 완료');
-    } catch(err) {
-      alert('파일을 읽는 데 실패했습니다: ' + err.message);
-    } finally {
-      e.target.value = '';
-    }
-  };
-  reader.readAsText(file);
-});
+/* (백업/복원 버튼은 UI에서 제거됨 — buildDataPayload 와 applyCloudData 로 충분) */
 
 /* Header controls */
 document.getElementById('startDate').value = state.current.startDate;
@@ -1654,6 +1646,150 @@ async function exportPagePng(dayIndices, pageIdx, totalPages, titleStr) {
 document.getElementById('btnXlsx').addEventListener('click', exportToExcel);
 document.getElementById('btnPng').addEventListener('click', exportToPng);
 
+/* ========= GitHub API auto-commit ========= */
+const GH_KEY = 'newbieTrainingGitHub';
+// 배포 사이트 기준 기본값. PAT만 사용자가 1회 입력하면 됨 (브라우저 localStorage 보관).
+const GH_DEFAULTS = {
+  pat: '',
+  owner: 'jinjin-stack',
+  repo: 'time_table_maker',
+  branch: 'main',
+  path: 'data.json',
+  enabled: true
+};
+function loadGhConfig() {
+  let cfg = {};
+  try {
+    const raw = localStorage.getItem(GH_KEY);
+    if (raw) cfg = JSON.parse(raw);
+  } catch(e){}
+  return Object.assign({}, GH_DEFAULTS, cfg);
+}
+function saveGhConfigToStorage() { localStorage.setItem(GH_KEY, JSON.stringify(ghConfig)); }
+let ghConfig = loadGhConfig();
+
+function buildDataPayload() {
+  return {
+    type: 'newbie-training-timetable',
+    version: 2,
+    exportedAt: new Date().toISOString(),
+    current: state.current,
+    favorites: state.favorites,
+    saved: state.saved
+  };
+}
+
+function utf8ToBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+async function ghGetFileSha(cfg) {
+  const c = cfg || ghConfig;
+  const url = `https://api.github.com/repos/${c.owner}/${c.repo}/contents/${encodeURIComponent(c.path)}?ref=${encodeURIComponent(c.branch)}`;
+  const res = await fetch(url, {
+    headers: {
+      'Authorization': `Bearer ${c.pat}`,
+      'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    const t = await res.text();
+    throw new Error(`${res.status} - ${t.slice(0,200)}`);
+  }
+  const d = await res.json();
+  return d.sha;
+}
+
+async function ghPushDataJson() {
+  const c = ghConfig;
+  if (!c.pat || !c.owner || !c.repo) throw new Error('PAT/owner/repo가 설정되지 않았습니다');
+  const jsonStr = JSON.stringify(buildDataPayload(), null, 2);
+  const content = utf8ToBase64(jsonStr);
+  const sha = await ghGetFileSha();
+  const url = `https://api.github.com/repos/${c.owner}/${c.repo}/contents/${encodeURIComponent(c.path)}`;
+  const body = {
+    message: `chore: update ${c.path} via web editor (${new Date().toISOString()})`,
+    content,
+    branch: c.branch
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${c.pat}`,
+      'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const t = await res.text();
+    throw new Error(`${res.status} - ${t.slice(0,300)}`);
+  }
+}
+
+/* Settings modal */
+function openGhModal() {
+  document.getElementById('ghOwner').value = ghConfig.owner || '';
+  document.getElementById('ghRepo').value = ghConfig.repo || '';
+  document.getElementById('ghBranch').value = ghConfig.branch || 'main';
+  document.getElementById('ghPath').value = ghConfig.path || 'data.json';
+  document.getElementById('ghPat').value = ghConfig.pat || '';
+  document.getElementById('ghEnabled').checked = !!ghConfig.enabled;
+  document.getElementById('ghBackdrop').classList.add('show');
+}
+function closeGhModal() {
+  document.getElementById('ghBackdrop').classList.remove('show');
+}
+document.getElementById('btnGhSettings').addEventListener('click', openGhModal);
+document.getElementById('ghCancel').addEventListener('click', closeGhModal);
+document.getElementById('ghBackdrop').addEventListener('click', e => {
+  if (e.target.id === 'ghBackdrop') closeGhModal();
+});
+document.getElementById('ghSaveCfg').addEventListener('click', () => {
+  ghConfig = {
+    owner: document.getElementById('ghOwner').value.trim(),
+    repo: document.getElementById('ghRepo').value.trim(),
+    branch: document.getElementById('ghBranch').value.trim() || 'main',
+    path: document.getElementById('ghPath').value.trim() || 'data.json',
+    pat: document.getElementById('ghPat').value.trim(),
+    enabled: document.getElementById('ghEnabled').checked
+  };
+  saveGhConfigToStorage();
+  if (ghConfig.enabled && ghConfig.pat && ghConfig.owner && ghConfig.repo) {
+    updateCloudStatus(`✅ 자동 푸시 활성화 (${ghConfig.owner}/${ghConfig.repo}@${ghConfig.branch})`);
+  } else {
+    updateCloudStatus('— GitHub 자동 푸시 비활성');
+  }
+  showToast('GitHub 설정 저장됨');
+  closeGhModal();
+});
+document.getElementById('ghTest').addEventListener('click', async () => {
+  const tempCfg = {
+    owner: document.getElementById('ghOwner').value.trim(),
+    repo: document.getElementById('ghRepo').value.trim(),
+    branch: document.getElementById('ghBranch').value.trim() || 'main',
+    path: document.getElementById('ghPath').value.trim() || 'data.json',
+    pat: document.getElementById('ghPat').value.trim()
+  };
+  if (!tempCfg.pat || !tempCfg.owner || !tempCfg.repo) {
+    alert('PAT, owner, repo 모두 입력하세요.'); return;
+  }
+  try {
+    const sha = await ghGetFileSha(tempCfg);
+    alert(sha
+      ? `✅ 연결 성공\n\n파일 SHA: ${sha.slice(0,10)}…\n(${tempCfg.path} 존재함 — 푸시 시 덮어쓰기)`
+      : `✅ 연결 성공\n\n${tempCfg.path} 아직 없음 — 첫 푸시 시 새로 생성됩니다.`);
+  } catch(e) {
+    alert(`❌ 연결 실패\n\n${e.message}\n\n확인:\n• PAT 권한(Contents: Read and write)\n• owner/repo/branch 철자\n• Fine-grained PAT라면 해당 레포 접근 허용 여부`);
+  }
+});
+
+/* 수동 푸시 버튼 제거: 새로 저장/덮어쓰기 시 자동 푸시됨 */
+
 /* ========= Cloud (GitHub Pages data.json) sync ========= */
 async function tryLoadDataJson() {
   try {
@@ -1682,72 +1818,42 @@ function updateCloudStatus(text) {
   if (el) el.textContent = text;
 }
 
-document.getElementById('btnExportGithub').addEventListener('click', () => {
-  const payload = {
-    type: 'newbie-training-timetable',
-    version: 2,
-    exportedAt: new Date().toISOString(),
-    current: state.current,
-    favorites: state.favorites,
-    saved: state.saved
-  };
-  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'data.json';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(a.href);
-  showToast('data.json 다운로드 완료 — GitHub 레포에 덮어쓰기로 업로드하세요.');
-});
-
-document.getElementById('btnCloudReload').addEventListener('click', async () => {
-  const data = await tryLoadDataJson();
-  if (!data) {
-    alert('data.json을 찾지 못했습니다.\n\n• GitHub Pages URL로 접속했는지 확인\n• 레포에 data.json이 업로드 됐는지 확인\n• 로컬 file:// 환경에서는 브라우저 보안 정책으로 작동하지 않습니다.');
-    return;
-  }
-  const hasLocalWork = state.current.events.length > 0 || Object.keys(state.saved).length > 0;
-  if (hasLocalWork) {
-    if (!confirm('현재 브라우저의 모든 데이터(현재 시간표/저장목록/즐겨찾기/휴일)가 GitHub data.json 으로 덮어쓰기 됩니다. 계속할까요?')) return;
-  }
-  applyCloudData(data);
-  renderTimetable();
-  renderFavorites();
-  renderSavedList();
-  const ts = data.exportedAt ? new Date(data.exportedAt).toLocaleString('ko-KR') : '';
-  updateCloudStatus(`GitHub data.json (${ts}) 적용됨`);
-  showToast('GitHub data.json 불러오기 완료');
-});
+/* (수동 다운로드/새로고침 버튼은 UI에서 제거됨 — 페이지 로드 시 자동 sync) */
 
 /* ========= Async Init ========= */
 (async function init() {
   document.getElementById('startDate').value = state.current.startDate;
 
-  // GitHub Pages 환경에서만 동작 (file:// 에서는 fetch 차단됨)
+  // GitHub Pages 환경에서 자동 동기화 (file:// 에서는 fetch 차단되어 silently skip)
   const cloudData = await tryLoadDataJson();
   if (cloudData) {
-    const localExists = localStorage.getItem(STORAGE_KEY) !== null;
+    const cloudT = cloudData.exportedAt ? new Date(cloudData.exportedAt).getTime() : 0;
+    const localT = state.lastExplicitSave || 0;
     const isEmptyLocal =
       state.current.events.length === 0 &&
       Object.keys(state.saved).length === 0 &&
       (state.favorites || []).length === 0;
-    const ts = cloudData.exportedAt ? new Date(cloudData.exportedAt).toLocaleString('ko-KR') : '';
 
-    if (!localExists || isEmptyLocal) {
+    if (isEmptyLocal || cloudT > localT) {
       applyCloudData(cloudData);
-      updateCloudStatus(`GitHub data.json (${ts}) 자동 적용`);
-    } else {
-      updateCloudStatus(`GitHub data.json: ${ts} (현재는 로컬 작업 우선 — 🔄 로 강제 적용)`);
+      state.lastExplicitSave = cloudT;
+      saveState();
+      if (!isEmptyLocal && cloudT > localT) {
+        showToast('GitHub의 최신 데이터를 불러왔습니다.');
+      }
     }
-  } else {
-    updateCloudStatus('— data.json 없음 (로컬 모드)');
   }
 
   renderTimetable();
   renderFavorites();
   renderSavedList();
+
+  // PAT 미설정 안내 (자동 푸시 비활성)
+  if (!ghConfig.pat) {
+    setTimeout(() => {
+      showToast('💡 ⚙️ 설정에서 PAT 입력 시 저장이 GitHub에 자동 푸시됩니다.');
+    }, 1200);
+  }
 })();
 </script>
 </body>
